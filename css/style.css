@@ -1009,7 +1009,8 @@ textarea.form-input {
         justify-content: center;
     }
 
-    .footer-link {
+    .footer-link,
+    .footer-decoration {
         display: none;
     }
 
