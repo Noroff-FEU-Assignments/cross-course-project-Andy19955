@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushing the comfort zone - RainyDays</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28b3cf1213.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="branding">
+          <a href="../" title="RainyDays">
+            <img class="logo" src="../images/logo.png" alt="RainyDays logo">
+          </a>
+        </div>
+        <input type="checkbox" id="menu-checkbox">
+        <div class="navigation-collapse" id="navigationCollapse">
+          <ul class="navigation-elements">
+            <li>
+              <a class="nav-link" href="../" title="Home">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="../women/" title="Women">Women</a>
+            </li>
+            <li>
+              <a class="nav-link" href="../men/" title="Men">Men</a>
+            </li>
+            <li>
+              <a class="nav-link active" href="../contact/" title="Contact">Contact</a>
+            </li>
+            <li>
+              <a class="nav-link" href="../about/" title="About">About</a>
+            </li>
+          </ul>
+        </div>
+        <a href="../checkout/" class="nav-cart" title="Go to cart">
+          <div class="cart-icon">
+            <i class="fa fa-bag-shopping"></i>
+            <span class="cart-count">2</span>
+            </div>
+        </a>
+        <label for="menu-checkbox" class="navigation-toggler"><i class="fa fa-bars"></i></label>
+      </nav>
+    </header>
+    <main>
+        <section id="breadcrumbs" class="breadcrumbs-container">
+            <a href="../" title="Home">Home</a> / <a href="../contact/" title="Contact">Contact</a>
+        </section>
+        <section id="page-cover" class="page-cover contact-page-cover">
+            <h1 class="page-cover-title">
+                Contact us
+            </h1>
+        </section>
+        <section id="contact" class="section-container">
+            <p>Fill in the form below if you wish to contact us. We will normally respond within 1-2 working days. During busy periods, the response time may be somewhat longer.</p>
+            <div class="form-container">
+              <form action="#" method="post">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Full name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="form-label">E-mail address</label>
+                    <input type="email" id="email" class="form-input" placeholder="E-mail" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="text" id="phone" class="form-input" placeholder="+47 xxx xx xxx" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-input" placeholder="Your message" required></textarea>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <button type="submit" class="form-btn" name="send">Send message</button>
+                </div>
+              </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <span class="copyright">&copy; 2023 RainyDays</span>
+        <span>|</span>
+        <a href="../about/" class="footer-link" title="About">About</a>
+        <a href="../contact/" class="footer-link" title="Contact">Contact</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

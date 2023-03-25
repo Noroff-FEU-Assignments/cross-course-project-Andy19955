@@ -1,24 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My first website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushing the comfort zone - RainyDays</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28b3cf1213.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <h2>Web Security</h2>
-    <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
-    <p id="web-security-answer"></p>
-      There are many threats in the world of web security, and there always will be. Some of the common threats inclue SQL injection, cross-site scripting and cross-site request forgery. These security threats can perform great damage. For instance, the SQL injection may potentially give the attacker access to perform CRUD operations against your database. As a result of this, your information stored in the database may be stolen or even deleted. Other security threats may also steal user information from your website.
-      <br><br>
-      However, by following some common security practices, you can minimize the risk for some of these threats:
-      <ul>
-        <li><b>Sanitization of data:</b> Ensure that the data that is passed to your systems is in the right format before accepting it.</li>
-        <li><b>HTTPS instead of HTTP:</b> You should use HTTPS as this is encrypted and therefor far more secure than HTTP.</li>
-        <li><b>Secure authorization and authentication:</b> Use strong and unique passwords to protect your website. You can also use an open-standard authorization protocol or framework for instance OpenLogin. Two-factor authentication (2FA) is recommened as this adds an extra layer to your authentication process.</li>
-        <li><b>Third-party application:</b> If you're using any third-party applications, make sure that they are well trusted and tested.</li>
-      </ul>
-      These are only a few of all the security threats and practices there is. You should always keep a high focus on web security, assess your systems security measures regularly and continuously research new threats and practices.
-    </p>
+    <header>
+      <nav class="navbar">
+        <div class="branding">
+          <a href="#" title="RainyDays">
+            <img class="logo" src="images/logo.png" alt="RainyDays logo">
+          </a>
+        </div>
+        <input type="checkbox" id="menu-checkbox">
+        <div class="navigation-collapse" id="navigationCollapse">
+          <ul class="navigation-elements">
+            <li>
+              <a class="nav-link active" href="#" title="Home">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="women/" title="Women">Women</a>
+            </li>
+            <li>
+              <a class="nav-link" href="men/" title="Men">Men</a>
+            </li>
+            <li>
+              <a class="nav-link" href="contact/" title="Contact">Contact</a>
+            </li>
+            <li>
+              <a class="nav-link" href="about/" title="About">About</a>
+            </li>
+          </ul>
+        </div>
+        <a href="checkout/" class="nav-cart" title="Go to cart">
+          <div class="cart-icon">
+            <i class="fa fa-bag-shopping"></i>
+            <span class="cart-count">2</span>
+            </div>
+        </a>
+        <label for="menu-checkbox" class="navigation-toggler"><i class="fa fa-bars"></i></label>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <h1 class="hero-title">
+          Pushing the Comfort Zone
+        </h1>
+        <div class="hero-buttons">
+          <a href="women/" class="main-btn" title="Women">Women</a>
+          <a href="men/" class="main-btn" title="Men">Men</a>
+        </div>
+      </section>
+      <section id="new-releases">
+        <h2 class="section-title">
+          New releases
+        </h2>
+        <div class="product-list">
+          <a href="jacket1/" title="Jacket 1">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="images/jacket1-small.jpg" height="348px" width="293px" alt="Jacket 1">
+              </div>
+              <span class="product-name">Jacket 1</span>
+              <span class="product-price">$ 109</span>
+            </div>
+          </a>
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/jacket2-small.jpg" height="348px" width="293px" alt="Jacket 2">
+            </div>
+            <span class="product-name">Jacket 2</span>
+            <span class="product-price">$ 99</span>
+          </div>
+          <div class="product-card">
+            <div class="product-img">
+              <img src="images/jacket3-small.jpg" height="348px" width="293px" alt="Jacket 3">
+            </div>
+            <span class="product-name">Jacket 3</span>
+            <span class="product-price">$ 79</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <span class="copyright">&copy; 2023 RainyDays</span>
+        <span>|</span>
+        <a href="about/" class="footer-link" title="About">About</a>
+        <a href="contact/" class="footer-link" title="Contact">Contact</a></span>
+      </div>
+    </footer>
   </body>
 </html>
