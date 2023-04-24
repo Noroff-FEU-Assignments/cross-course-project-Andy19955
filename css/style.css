@@ -94,8 +94,8 @@ img.logo {
 
 .cart-count {
     position: absolute;
-    top: 14px;
-    left: 6px;
+    top: 0px;
+    left: 13px;
     background-color: #1b4752;
     color: white;
     border-radius: 50%;
