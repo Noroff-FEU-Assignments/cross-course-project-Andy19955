@@ -16,6 +16,13 @@ body {
     font-size: 16px;
     background-color: #eee;
     color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 ul {
@@ -32,6 +39,10 @@ a {
 p {
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Header */
@@ -229,18 +240,16 @@ img.logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-size: cover;
 }
 
 .about-page-cover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/about-cover.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
 .contact-page-cover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/contact-cover.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
 .page-cover-title {
